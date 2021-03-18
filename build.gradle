@@ -32,9 +32,3 @@ tasks.withType(JavaCompile) {
 test {
     useJUnitPlatform()
 }
-
-task jenkins_learning(type: Test) {
-    useJUnitPlatform {
-        includeTags 'positive'
-    }
-}
